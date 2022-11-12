@@ -1,5 +1,5 @@
 body {
-    padding-top: 60px;
+    padding: 60px 12px;
 }
 
 .box-shadow {
@@ -9,4 +9,27 @@ body {
 
 .carousel-bg {
     background: #0009;
+}
+
+.icon {
+    height: 100px;
+}
+
+.homeQuote {
+    background: url(./img/bg-quote.jpg) center center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .homeQuote blockquote p {
+        font-size: 2.5rem;
+    }
+
+    body {
+        padding: 0px 12px;
+    }
+
+    .fixed-top {
+        position: relative;
+    }
 }
