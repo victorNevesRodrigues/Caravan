@@ -1,5 +1,5 @@
 body {
-    padding: 60px 12px;
+    padding: 60px 0px 0px;
 }
 
 .box-shadow {
@@ -20,16 +20,30 @@ body {
     background-size: cover;
 }
 
+.hr {
+    margin-top: 1rem;
+}
+
+.asksContainer {
+    width: 60%;
+}
+
+a {
+    text-decoration: none;
+
+}
+
 @media (max-width: 768px) {
     .homeQuote blockquote p {
         font-size: 2.5rem;
     }
 
     body {
-        padding: 0px 12px;
+        padding-top: 0rem;
     }
 
     .fixed-top {
         position: relative;
     }
 }
+
