@@ -33,6 +33,11 @@ a {
 
 }
 
+table {
+    max-width: 70rem;
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .homeQuote blockquote p {
         font-size: 2.5rem;

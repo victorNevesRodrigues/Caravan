@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Caravan Viajens</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top box-shadow pe-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../img/caravan.svg" alt="logo do site"
+        /></a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Abrir a Navegação"
+        >
+        
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="./places.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./california.html">California</a></li>
+                        <li><a class="dropdown-item" href="./paris.html">Paris</a></li>
+                        <li><a class="dropdown-item" href="./dublin.html">Dublin</a></li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./plans.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                </li>
+                <li class="nav-item ms-md-2">
+                    <a class="btn btn-outline-primary" href="./subscribe.html">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLoginTitulo">Entre na Sua Conta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <div class="d-flex align-items-baseline pt-1">
+              <div id="emailHelp" class="form-text pe-1">Esqueceu a senha?</div>
+              <a href="#">Clique aqui.</a>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="images">
+        <div class="container">
+         <div class="my-5 text-center">
+          <span class="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+          <h1 class="display-4 text-primary">Descubra Dublin</h1>
+        </div>
+          <div class="row">
+            <div class="col-md">
+                <img src="../img/dublin/foto-1.jpg" alt="imagem do local" class="img-fluid mb-4">
+                <img src="../img/dublin/foto-2.jpg" alt="imagem do local" class="img-fluid mb-4">
+                <img src="../img/dublin/foto-3.jpg" alt="imagem do local" class="img-fluid mb-4">
+            </div>
+
+            <div class="col-md">
+                <img src="../img/dublin/foto-4.jpg" alt="imagem do local" class="img-fluid mb-4">
+                <img src="../img/dublin/foto-5.jpg" alt="imagem do local" class="img-fluid mb-4">
+            </div>
+
+            <div class="col-md">
+                <img src="../img/dublin/foto-6.jpg" alt="imagem do local" class="img-fluid mb-4">
+                <img src="../img/dublin/foto-7.jpg" alt="imagem do local" class="img-fluid mb-4">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="events">
+         <div class="my-5 text-center">
+          <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
+          <h1 class="display-4 text-primary">Próximos Eventos</h1>
+        </div>
+            <table class="table table-hover table-responsive-md mb-5">
+                <thead>
+                  <tr style="border-top: 1px solid #dee2e6">
+                    <th scope="col">Data</th>
+                    <th scope="col">Evento</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Ticket</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Johnny Cash</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Alok</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Creed</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Bruno Mars</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Daft Punk</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>System of a down</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">23/10</th>
+                    <td>Audioslave</td>
+                    <td>The Academy</td>
+                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Comprar Ticket</a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+
+    <footer class="bg-dark text-secondary">
+      <div class="container py-4 text-center">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6 text-white">PÁGINAS</h4>
+            <ul class="list-unstyled">
+              <li><a href="plans.html">Planos</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="subscribe.html">Inscreva-se</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <h4 class="h6 text-white">LOCAIS</h4>
+            <ul class="list-unstyled text-decoration-none">
+              <li><a href="California.html">California</a></li>
+              <li><a href="Paris.html">Paris</a></li>
+              <li><a href="Dublin.html">Dublin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-6">
+            <h4 class="h6 text-white">DADOS DE CONTATO</h4>
+            <ul class="list-unstyled">
+              <li>caravan@caravan.com.br</li>
+              <li>21 99999-9999</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-6" style="text-align: -webkit-center;">
+            <h4 class="h6 text-white text-center">REDES SOCIAIS</h4>
+            <div>
+            <ul class="list-unstyled">
+              <li class="w-100"><a href="#" class="btn btn-outline-secondary d-block mb-2 btn-sm" style="max-width: 140px;">Facebook</a></li>
+              <li class="w-100"><a href="#" class="btn btn-outline-secondary d-block mb-2 btn-sm" style="max-width: 140px;">Twitter</a></li>
+              <li class="w-100"><a href="#" class="btn btn-outline-secondary d-block mb-2 btn-sm" style="max-width: 140px;">Youtube</a></li>
+            </ul>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3"><p class="mb-0 text-white">Caravan © 2022. Alguns direitos reservados.</p></div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
