@@ -28,6 +28,8 @@ body {
     width: 60%;
 }
 
+
+
 a {
     text-decoration: none;
 
@@ -37,6 +39,15 @@ table {
     max-width: 70rem;
     margin: auto;
 }
+
+.plansList li {
+    padding: 1rem;
+}
+
+.plansList li + li {
+    border-top: 1px solid rgba(0, 0, 0, .03);
+}
+
 
 @media (max-width: 768px) {
     .homeQuote blockquote p {
